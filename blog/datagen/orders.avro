@@ -1,0 +1,68 @@
+{
+    "namespace": "myretailstore",
+    "name": "orders",
+    "type": "record",
+    "fields": [
+        {
+            "name": "id",
+            "type": {
+                "type": "int",
+                "arg.properties": {
+                    "iteration": {
+                        "start": 1000,
+                        "step": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "customername",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                    "Karthik",
+                    "Peter",
+                    "Carol",
+                    "Bob",
+                    "Evelyn",
+                    "Frankie",
+                    "Darsh"
+                ]
+                }
+            }
+        },
+        {
+            "name": "date",
+            "type": {
+                "type": "long",
+                "arg.properties": {
+                    "options" : [
+                        1588707310,
+                        1588807310,
+                        1588907310
+                    ]
+                }
+            }
+        },
+        {
+            "name": "amount",
+            "type": {
+                "type": "double",
+                "arg.properties": {
+                    "range": {"min": 1000.0 , "max": 5000.0}
+                }
+            }
+        },
+        {
+            "name": "item_quantity",
+            "type": {
+                "type": "int",
+                "arg.properties": {
+                    "range": {"min": 5 , "max": 50}
+                }
+            }
+        }
+
+    ]
+}
