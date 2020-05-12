@@ -1,0 +1,49 @@
+{
+    "namespace": "myretailstore",
+    "name": "customers",
+    "type": "record",
+    "fields": [
+        {
+            "name": "customername",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                    "Karthik",
+                    "Peter",
+                    "Carol",
+                    "Bob",
+                    "Evelyn",
+                    "Frankie",
+                    "Darsh"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "country",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "AUSTRALIA"
+                    ]
+                }
+            }
+
+        },
+        {
+            "name": "customer_type",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "PLATINUM",
+                        "GOLD",
+                        "SILVER"
+                    ]
+                }
+            }
+        }
+    ]
+    }
